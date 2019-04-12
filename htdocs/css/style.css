@@ -1,0 +1,37 @@
+
+.outer-wrap-footer {
+    box-sizing: border-box;
+    background-color: #333;
+    width: 100%;
+    margin-top: 2em;
+    padding: 10px;
+}
+
+.inner-wrap-footer {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.footer-column {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    color: grey;
+    height: 200px;
+}
+
+.footer-column a {
+    color: grey;
+}
+
+.site-footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: grey;
+}
+
+.site-footer a{
+    color: grey;
+    font-style: normal;
+}

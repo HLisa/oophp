@@ -1,3 +1,3 @@
 #### Footer col 2
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+På [dbwebb.se](https://dbwebb.se/kurser/oophp-v5) hittar du kursens hemsida och på [GitHub](https://github.com/dbwebb-se/oophp) kan du kika på kursens kursrepo. 
