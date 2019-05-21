@@ -28,15 +28,17 @@ $app->router->get("guess/play", function () use ($app) {
     $title = "Play the game";
 
     $object = $_SESSION["object"];
-    // $number = $object->getNumber();
+    $number = $object->getNumber();
     $tries = $object->getTries();
 
     // Get current settings from the SESSION.
     $guess = $_SESSION["guess"] ?? null;
     $res = $_SESSION["res"] ?? null;
+    $doCheat = $_SESSION["doCheat"] ?? null;
 
     $_SESSION["res"] = null;
     $_SESSION["guess"] = null;
+    $_SESSION["doCheat"] = null;
 
     $data = [
         "guess" => $guess ?? null,
@@ -86,7 +88,7 @@ $app->router->post("guess/play", function () use ($app) {
         $_SESSION["object"]->getRandom();
     } if (isset($_POST["doCheat"])) {
         // Cheat.
-        $number = $object->getNumber();
+        $_SESSION["doCheat"] = $doCheat;
     }
 
     // var_dump($_POST["doCheat"]);
